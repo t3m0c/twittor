@@ -1,8 +1,8 @@
 
-var url = window.Location.href;
+var url = window.location.href;
 var swLocation = '/twittor/sw.js'
 
-if ( navigator.serviceWorker) {
+if ( navigator.serviceWorker ) {
   if ( url.includes('localhost') ){
     swLocation = '/sw.js';
  }
@@ -26,9 +26,6 @@ var txtMensaje  = $('#txtMensaje');
 
 // El usuario, contiene el ID del héroe seleccionado
 var usuario;
-
-
-
 
 // ===== Codigo de la aplicación
 
